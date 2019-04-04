@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  color: #51E886;
+}
+
+/* Estilos del Nav */
+#logo {
+  width: 10px;
+  height: auto;
+}
