@@ -23,56 +23,25 @@
 
     <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home&nbsp;<ion-icon name="home"></ion-icon><span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php"><ion-icon name="home"></ion-icon>&nbsp;Home</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="#">Preguntas Frecuentes&nbsp;<ion-icon name="help"></ion-icon></a>
+        <a class="nav-link" href="#"><ion-icon name="help"></ion-icon><br>Preguntas Frecuentes</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="#">Registrate&nbsp;<ion-icon name="information-circle"></ion-icon></a>
+        <a class="nav-link" href="#"><ion-icon name="information-circle"></ion-icon>&nbsp;Registrate</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="#">Login&nbsp;<ion-icon name="log-in"></ion-icon></a>
+        <a class="nav-link" href="#"><ion-icon name="log-in"></ion-icon>&nbsp;Login</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="#">Hace tu Pedido&nbsp;<ion-icon name="cart"></ion-icon></a>
+        <a class="nav-link" href="#"><ion-icon name="cart"></ion-icon><br>&nbsp;Hace tu Pedido</a>
       </li>
     </ul>
   </div>
 </nav>
 </div>
 
-
-
-<br><br><br>
-
-
-
-
-
-
-
-<div class="container-fluid">
-
-<footer>
-    <h3>Seguinos en nuestras redes sociales</h3><br>
-  <ul>
-          <li>
-              <a href="#"> <ion-icon name="logo-facebook"></ion-icon>facebook</a>
-          </li>
-          <li>
-              <a href="#"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
-          </li>
-          <li>
-              <a href="#"> <ion-icon name="logo-twitter"></ion-icon>Twitter</a>
-          </li>
-          <li>
-              <a href="#"> <ion-icon name="logo-whatsapp"></ion-icon>whatsapp</a>
-          </li>
-  </ul>
-    <h4>Copyright-2019-la Ola S.A</h4>
-</footer>
-</div>
 
 
 
