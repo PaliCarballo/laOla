@@ -16,50 +16,47 @@
   <body>
 
 
-    <form action="" method="post">
-      <ul>
-
-
-      <li><label for="">Nombre</label>
-      <input type="text" name="dire" value=""></li>
-
-      <li><label for="">Apellido</label>
-      <input type="text" name="apellido" value=""></li>
-
-      <li><label for="">Email</label>
-      <input type="email" name="" value=""></li>
-
-      <li><label for="">Contraseña</label>
-      <input type="password" name="pass" value=""></li>
-
-      <li><label for="">Dirección</label>
-      <input type="text" name="dire" value="">
-      <label for="">piso, depto., etc.</label>
-      <input type="text" name="dire2" value="">
-      <label for="">Codigo Postal</label>
-      <input type="number" name="codigopostal" value="" >
-      </li>
-
-      <li><label for="inputState">Ciudad</label>
-      <select id="inputState" class="form-control" name="ciudad">
-        <option selected>Seleccione...</option>
+    <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Contraseña</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Dirección</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Calle Falsa 123">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">depto., piso, etc.</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="2do. 'A'" name="dire2">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Ciudad</label>
+      <input type="text" class="form-control" id="inputCity" name="ciudad">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Provincia</label>
+      <select id="inputState" class="form-control">
+        <option selected>Elegí...</option>
         <option>CABA</option>
-        <option>Gran Buenos Aires</option>
-        <option>Ushuaia</option>
-      </select></li>
-
-      <li><label for="">Provincia</label>
-      <select class="" name="provincia">
-        <option selected>Seleccione...</option>
-        <option value="">Buenos Aires</option>
-        <option value="">Tierra del Fuego</option>
-      </select></li>
-      <li><button type="submit" class="btn btn-outline-light">Registrate!</button></li>
-
-      </ul>
-
-    </form>
-
+        <option>Buenos Aires</option>
+        <option>Tierra del Fuego</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">C.P.</label>
+      <input type="text" class="form-control" id="inputZip" name="codpost">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-outline-light">Enviar :)</button>
+</form>
+    </div>
 
 
 

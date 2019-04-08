@@ -13,7 +13,8 @@ body{
 
 form {
   font-family: 'Fjalla One', sans-serif;
-  padding: 30px;
+  padding: 100px;
+
 
 }
 
@@ -25,7 +26,6 @@ ul.button {
 ul {
   list-style: none;
 }
-
 
 
 p {display: flex;
