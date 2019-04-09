@@ -44,3 +44,7 @@ h1{
   text-align: justify;
   display: inline-block;
 }
+
+div {
+  width: 70%;
+}

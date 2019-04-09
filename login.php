@@ -13,24 +13,31 @@
   </head>
   <body>
 
+<?php include("nav.php")
+ ?>
+
+ <div class="log">
     <form action="index.php" method="get">
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail"
+    name="email">
   </div>
   <div class="form-group">
     <label for="pass">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" name="pass">
   </div>
 
   <button type="submit" class="btn btn-outline-light">Enviar :)</button>
 </form>
+</div>
 
 
 
 
 
-
+<?php
+include("footer.php") ?>
 
   </body>
 </html>
