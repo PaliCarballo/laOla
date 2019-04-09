@@ -13,7 +13,31 @@
   </head>
   <body>
 
-<?php include("nav.php")
+<?php include("nav.php");
+
+/*if ($_POST) {
+
+$mail= $_POST['email'];
+$password = $_POST['password'];
+$usuarios = file_get_contents('ARCHIVO DONDE GUARDAMOS LOS DATOS');
+$logusuario = json_decode($usuarioss,true);
+
+var_dump($logusuario);
+
+$mailreg = $logusuario["email"];
+$passreg = $logusuario["password"];
+if (password_verify($password, $passreg) && $mail == $passreg) {
+   echo "Bienveido {$logusuario['nombre']}";
+   $_SESSION['mailsreg'] = $mailreg;
+   $_SESSION['nombre'] = $logusuario;
+   header("Location:home.php");
+
+} else {
+  echo "usuario y/o Contraseña incorrecta";
+};
+
+}
+*/
  ?>
 
  <div class="log">
