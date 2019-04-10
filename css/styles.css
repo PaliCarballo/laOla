@@ -11,6 +11,7 @@ p {
   flex-direction: column;
   font-family: 'Quicksand', sans-serif;
   color: white;
+  font-size: 16px;
 }
 h1{
   color: white;
