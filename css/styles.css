@@ -44,6 +44,7 @@ div ul li a{
   font-size: 1em;
   color: white;
   list-style-type: none;
+    text-transform: uppercase;
 }
 div ul li a :hover{
   background-color: black;
