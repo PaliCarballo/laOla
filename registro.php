@@ -17,6 +17,7 @@
 
 
     <form>
+
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
@@ -56,6 +57,7 @@
   </div>
   <button type="submit" class="btn btn-outline-light">Enviar :)</button>
 </form>
+
     </div>
 
 

@@ -9,9 +9,10 @@ p {display: flex;
   color: white;
 }
 h1{
+  margin-left: 1%;
   color: white;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
  h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
@@ -21,14 +22,19 @@ h1{
 }
 
 /* Estilos del Nav */
-.logo {
+.logo { display: inline-flex;
+  flex-direction: row;
   padding-left:1%;
   width: 17%;
-  height: auto;
 }
 nav{
+
   background-image: url("../img/fondo2.jpg");
+
+
 }
+
+
 div ul li a{
 font-family: 'Fjalla One', sans-serif;
   font-size: 25px;
