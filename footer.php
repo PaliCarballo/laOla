@@ -3,10 +3,10 @@
         <h3>Seguinos en nuestras redes sociales</h3><br>
       <ul>
               <li>
-                  <a href="#"> <ion-icon name="logo-facebook"></ion-icon><br>Facebook</a>
+                  <a href="https://www.facebook.com/tellevalaola/"> <ion-icon name="logo-facebook"></ion-icon><br>Facebook</a>
               </li>
               <li>
-                  <a href="#"><ion-icon name="logo-instagram"></ion-icon><br>Instagram</a>
+                  <a href="https://www.instagram.com/tellevalaola/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon><br>Instagram</a>
               </li>
               <li>
                   <a href="#"> <ion-icon name="logo-twitter"></ion-icon><br>Twitter</a>
