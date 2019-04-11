@@ -11,6 +11,7 @@ p {
   flex-direction: column;
   font-family: 'Quicksand', sans-serif;
   color: white;
+  font-size: 16px;
 }
 h1{
   color: white;
@@ -32,6 +33,7 @@ h1{
 }
 nav{
   background-image: url("../img/fondo2.jpg");
+  background-color: #000;
 }
 .navbar-expand-lg .navbar-nav {
   width: 100%;
@@ -43,6 +45,7 @@ div ul li a{
   font-size: 1em;
   color: white;
   list-style-type: none;
+    text-transform: uppercase;
 }
 div ul li a :hover{
   background-color: black;
@@ -57,6 +60,7 @@ ul li{
 }
 footer{
 background-image: url("../img/fondo2.jpg");
+background-color: #000;
   padding-left: 10%;
   padding-top: 2%;
 padding-right: 10%

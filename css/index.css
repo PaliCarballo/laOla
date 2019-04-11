@@ -6,4 +6,142 @@
   background-position: center;
   height: 100vh;
   text-align: center;
+  padding: 150px 0;
 }
+.texto-banner {
+ /*   border: 4px solid #fff; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    -webkit-box-shadow: 10px 10px 60px -6px rgba(0,0,0,0.48);
+-moz-box-shadow: 10px 10px 60px -6px rgba(0,0,0,0.48);
+box-shadow: 10px 10px 60px -6px rgba(0,0,0,0.48);
+}
+.fondo-banner h1, .fondo-banner h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4em;
+    display: block;
+    text-align: center;
+}
+.fondo-banner p {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-top: 50px;
+}
+.fondo-banner .btn-primary {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #64a19d;
+    border: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 18px 24px;
+    transition:0.2s background-color;
+}
+
+.fondo-banner .btn-primary:hover {
+    background-color:#4f837f;
+}
+
+.fondo-banner .btn-primary:active {
+    background-color:#4f837f!important;
+    transform:translateY(1px);
+}
+
+main{
+    background: white;
+    max-width: 1200px;
+    margin: 120px auto 0;
+    height: 2000px;
+}
+
+
+
+/* Estilos Craftsy */
+.celphones{
+    padding: 10px;
+}
+
+.unit{
+    position: relative;
+}
+
+.cel-img{
+    width: 100%;
+}
+.cel-flag{
+    position:absolute;
+    top:0;
+    right: 10px;
+}
+.cel-name{
+    background-color: rgba(22,33,44,0.5);
+    font-style: italic;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.cel-more{
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgba(255, 10, 10, 1);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#cajaA, #cajaB, #cajaC{
+    height: 300px;
+    float: left;
+    color: white;
+}
+#cajaA{
+    width: 25%;
+    background-color: green;
+}
+#cajaB{
+    width: 58.33%;
+    background-color: blue;
+}
+#cajaC{
+    width: 16.66%;
+    background-color: yellow;
+}
+.menu-hamb, .menu-hamb-check{
+
+}
+
+/*media para tablets MF */
+@media(min-width:460px){
+    .celphones{
+        padding: 20px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .unit{
+        width: 49%;
+    }
+
+    .menu-list{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/*media para notebooks */
+@media(min-width:780px){
+    .unit{
+        width: 33%;
+    }
