@@ -33,6 +33,7 @@ h1{
 }
 nav{
   background-image: url("../img/fondo2.jpg");
+  background-color: #000;
 }
 .navbar-expand-lg .navbar-nav {
   width: 100%;
@@ -59,6 +60,7 @@ ul li{
 }
 footer{
 background-image: url("../img/fondo2.jpg");
+background-color: #000;
   padding-left: 10%;
   padding-top: 2%;
 padding-right: 10%
