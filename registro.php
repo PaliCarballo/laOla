@@ -63,6 +63,8 @@
 
      ?>
 
+     <div class="log">
+
 
     <form method="post">
         <div class="form-group">
