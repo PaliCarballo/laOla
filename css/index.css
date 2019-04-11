@@ -1,0 +1,54 @@
+.fondo-banner {
+  background-image: url("../img/fondo-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  padding: 150px 0;
+}
+.texto-banner {
+ /*   border: 4px solid #fff; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    -webkit-box-shadow: 10px 10px 60px -6px rgba(0,0,0,0.48);
+-moz-box-shadow: 10px 10px 60px -6px rgba(0,0,0,0.48);
+box-shadow: 10px 10px 60px -6px rgba(0,0,0,0.48);
+}
+.fondo-banner h1, .fondo-banner h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4em;
+    display: block;
+    text-align: center;
+}
+.fondo-banner p {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-top: 50px;
+}
+.fondo-banner .btn-primary {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #64a19d;
+    border: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 18px 24px;
+    transition:0.2s background-color;
+}
+
+.fondo-banner .btn-primary:hover {
+    background-color:#4f837f;
+}
+
+.fondo-banner .btn-primary:active {
+    background-color:#4f837f!important;
+    transform:translateY(1px);
+}
