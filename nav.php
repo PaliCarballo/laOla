@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark ">
 
-  
+
         <img src="img/logo.png" class="logo" alt="">
         &nbsp;<h1>LA OLA / HAMBURGUESAS VEGGIES</h1>
 
