@@ -1,11 +1,19 @@
 
+body.log {
+  background-color: black;
+}
+
 
 div.log {
   font-family: 'Fjalla One', sans-serif;
-
-  margin: 0;
+  margin: 10em;
   justify-content: center;
-
   background-color: black;
   color: white;
+}
+
+div.form-log {
+  width: 25em;
+  margin: auto;
+
 }

@@ -14,14 +14,9 @@ p {
   font-size: 16px;
 }
 h1{
-  margin-left: 1%;
   color: white;
   font-family: 'Fjalla One', sans-serif;
-<<<<<<< HEAD
-  font-size: 40px;
-=======
   font-size: 2em;
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
 }
  h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
@@ -31,33 +26,20 @@ h1{
 }
 
 /* Estilos del Nav */
-.logo { display: inline-flex;
-  flex-direction: row;
+.logo {
   padding-left:1%;
-<<<<<<< HEAD
-  width: 17%;
-=======
   width: 10%;
   height: auto;
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
 }
 nav{
-
   background-image: url("../img/fondo2.jpg");
-<<<<<<< HEAD
-
-
-=======
   background-color: #000;
 }
 .navbar-expand-lg .navbar-nav {
   width: 100%;
   justify-content: flex-end;
   text-align: center;
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
 }
-
-
 div ul li a{
   font-family: 'Fjalla One', sans-serif;
   font-size: 1em;

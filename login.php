@@ -1,31 +1,4 @@
-<<<<<<< HEAD
-<?php
-include("nav.php") ?>
-<!DOCTYPE html>
-
-
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/logyregistro.css">
-    <title>La Ola - login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/logyregistro.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-
-
-
-=======
-
-
-
-
-
+<body class="log">
 
 <?php include("nav.php");
 
@@ -57,14 +30,13 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
 
 
  <div class="log">
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
     <form action="index.php" method="get">
-  <div class="form-group">
+  <div class="form-log">
     <label for="email">Email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail"
     name="email">
   </div>
-  <div class="form-group">
+  <div class="form-log">
     <label for="pass">Contraseña</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" name="pass">
   </div>
@@ -76,5 +48,4 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
 <?php
 include("footer.php") ?>
   </body>
-
 </html>

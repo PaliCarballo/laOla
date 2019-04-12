@@ -13,53 +13,7 @@
 
 
   </head>
-  <body>
-<<<<<<< HEAD
-
-
-    <form>
-
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Contraseña</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Dirección</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Calle Falsa 123">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">depto., piso, etc.</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="2do. 'A'" name="dire2">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Ciudad</label>
-      <input type="text" class="form-control" id="inputCity" name="ciudad">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">Provincia</label>
-      <select id="inputState" class="form-control">
-        <option selected>Elegí...</option>
-        <option>CABA</option>
-        <option>Buenos Aires</option>
-        <option>Tierra del Fuego</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">C.P.</label>
-      <input type="text" class="form-control" id="inputZip" name="codpost">
-    </div>
-  </div>
-  <button type="submit" class="btn btn-outline-light">Enviar :)</button>
-</form>
-
-=======
+  <body class="log">
     <?php
       include("nav.php");
 
@@ -104,7 +58,18 @@
             $nocodpos = "ingrese código postal";
         }
 
-      }
+        /* require_once ('cliente.php');
+
+        if ($_POST) {
+        $clienteNuevo = fann_get_network_type
+            Cliente ($_POST['nombre'], $_POST['apellido']);
+
+            var_dump($clienteNuevo);
+
+            $errorDni = $clienteNuevo->getDni( == null ? 'cargar nuevo dni' : '');*/
+        }
+
+      
 
 
      ?>
@@ -163,7 +128,6 @@
       </div>
       <button type="submit" class="btn btn-outline-light">Enviar :)</button>
     </form>
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
     </div>
 
 

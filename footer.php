@@ -9,10 +9,10 @@
                   <a href="https://www.instagram.com/tellevalaola/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon><br>Instagram</a>
               </li>
               <li>
-                  <a href="#"> <ion-icon name="logo-twitter"></ion-icon><br>Twitter</a>
+                  <a href="https://www.twitter.com/?lang=es"> <ion-icon name="logo-twitter"></ion-icon><br>Twitter</a>
               </li>
               <li>
-                  <a href="#"> <ion-icon name="logo-whatsapp"></ion-icon><br>Whatsapp</a>
+                  <a href="https://web.whatsapp.com/"> <ion-icon name="logo-whatsapp"></ion-icon><br>Whatsapp</a>
               </li>
       </ul>
         <h4>Copyright-2019-la Ola S.A</h4>

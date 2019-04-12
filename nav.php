@@ -14,26 +14,17 @@
     <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/logyregistro.css">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
   <body>
     <div class="container-fluid">
-      <header>
-
-
-
       <nav class="navbar navbar-expand-lg navbar-dark ">
-<<<<<<< HEAD
-<img src="img/logo.png" class="logo" alt="">
-<h1>LA OLA / HAMBURGUESAS VEGGIES</h1>
-=======
 
 
         <img src="img/logo.png" class="logo" alt="">
         &nbsp;<h1>LA OLA / HAMBURGUESAS VEGGIES</h1>
 
 
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -41,25 +32,12 @@
 
     <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-<<<<<<< HEAD
-        <a class="nav-link" href="index.php"><ion-icon name="home"></ion-icon> <br>Home</a>
-=======
         <a class="nav-link" href="index.php"><ion-icon name="home"></ion-icon><br>Home</a>
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
               </li>
               <li class="nav-item active">
         <a class="nav-link" href="preguntas.php"><ion-icon name="help"></ion-icon><br>Preguntas Frecuentes</a>
               </li>
               <li class="nav-item active">
-<<<<<<< HEAD
-        <a class="nav-link" href="#"><ion-icon name="information-circle"></ion-icon> <br>Registrate</a>
-              </li>
-              <li class="nav-item active">
-        <a class="nav-link" href="#"><ion-icon name="log-in"></ion-icon> <br>Login</a>
-              </li>
-              <li class="nav-item active">
-        <a class="nav-link" href="#"><ion-icon name="cart"></ion-icon><br>Hace tu Pedido</a>
-=======
         <a class="nav-link" href="registro.php"><ion-icon name="information-circle"></ion-icon><br>Registrate</a>
               </li>
               <li class="nav-item active">
@@ -67,10 +45,8 @@
               </li>
               <li class="nav-item active">
         <a class="nav-link" href="carrito.php"><ion-icon name="cart"></ion-icon><br>Hace tu Pedido</a>
->>>>>>> c3832c2bb56e5aafc2e35355f37504af3d64a5fc
       </li>
     </ul>
   </div>
 </nav>
-  </header>
 </div>
