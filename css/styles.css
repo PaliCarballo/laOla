@@ -5,6 +5,7 @@
 }
 .container-fluid {
   padding: 0!important;
+  position: relative;
 }
 p {
   display: flex;
@@ -21,33 +22,49 @@ h1{
  h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
   color: white;
-  text-align: justify;
-  display: inline-block;
 }
 
 /* Estilos del Nav */
 .logo {
-  padding-left:1%;
-  width: 10%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 70px;
   height: auto;
 }
 nav{
-  background-image: url("../img/fondo2.jpg");
   background-color: #000;
+  height: 100px;
+}
+.navbar {
+  padding: 0;
 }
 .navbar-expand-lg .navbar-nav {
   width: 100%;
   justify-content: flex-end;
   text-align: center;
 }
-div ul li a{
+.navbar-dark .navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-right: 15px;
+}
+.navbar-collapse {
+  padding-top: 40px;
+}
+nav h1 {
+  padding: 12px 0 0 15px; 
+}
+nav ul {
+  background-color: #000;
+}
+nav ul li a{
   font-family: 'Fjalla One', sans-serif;
   font-size: 1em;
   color: white;
   list-style-type: none;
     text-transform: uppercase;
 }
-div ul li a :hover{
+nav ul li a :hover{
   background-color: black;
   color:red;
 }
@@ -55,15 +72,16 @@ ion-icon{
   font-size: 2em;
   color: white;
 }
-ul li{
+nav ul li{
     padding-left: 20px;
 }
+
+/*Estilos del footer*/
 footer{
-background-image: url("../img/fondo2.jpg");
-background-color: #000;
+  background-color: #000;
   padding-left: 10%;
   padding-top: 2%;
-padding-right: 10%
+  padding-right: 10%
 }
 
 ul li{
@@ -81,10 +99,10 @@ list-style-type: none;
 
 footer ul{
   margin-left: 50%;
-
+  
 }
-/*Aca es el style de Preguntas*/
 
+/*Aca es el style de Preguntas*/
 .PreguntasF ul .respuesta{
   color: black;
   font-size: 25px;
@@ -99,3 +117,25 @@ footer ul{
   font-family: 'Fjalla One', sans-serif;
   font-size: 30px;
 }
+
+
+
+@media (min-width:768px) {
+ .navbar-expand-lg .navbar-collapse {
+  display: flex!important;
+  flex-basis: auto;
+ }
+ .navbar-collapse {
+  padding-top: 0!important;
+  padding-right: 15px;
+ }
+ .navbar-expand-lg .navbar-toggler {
+  display: none;
+ }
+ .navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+ }
+ nav h1 {
+  padding-left: 90px;
+ }
+
