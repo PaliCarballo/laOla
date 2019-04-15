@@ -6,7 +6,7 @@ body.log {
 
 div.log {
   font-family: 'Fjalla One', sans-serif;
-  margin: 10em;
+  margin: 5em;
   justify-content: center;
   background-color: black;
   color: white;
@@ -15,5 +15,6 @@ div.log {
 div.form-log {
   width: 25em;
   margin: auto;
+  display: initial;
 
 }
