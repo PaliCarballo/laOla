@@ -3,16 +3,16 @@
         <h3>Seguinos en nuestras redes sociales</h3><br>
       <ul>
               <li>
-                  <a href="https://www.facebook.com/tellevalaola/"> <ion-icon name="logo-facebook"></ion-icon><br>Facebook</a>
+                  <a href="https://www.facebook.com/tellevalaola/"> <ion-icon name="logo-facebook"></ion-icon><br></a>
               </li>
               <li>
-                  <a href="https://www.instagram.com/tellevalaola/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon><br>Instagram</a>
+                  <a href="https://www.instagram.com/tellevalaola/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon><br></a>
               </li>
               <li>
-                  <a href="https://www.twitter.com/?lang=es"> <ion-icon name="logo-twitter"></ion-icon><br>Twitter</a>
+                  <a href="https://www.twitter.com/?lang=es"> <ion-icon name="logo-twitter"></ion-icon><br></a>
               </li>
               <li>
-                  <a href="https://web.whatsapp.com/"> <ion-icon name="logo-whatsapp"></ion-icon><br>Whatsapp</a>
+                  <a href="https://web.whatsapp.com/"> <ion-icon name="logo-whatsapp"></ion-icon><br></a>
               </li>
       </ul>
         <h4>Copyright-2019-la Ola S.A</h4>
