@@ -9,7 +9,7 @@
     <h3>Preguntas Frecuentes</h3> <br><br><br>
 
 
-    <h3>Preguntas Frecuentes</h3><br><br>
+
     <ul>
 
     <li>¿Contiene ingredientes de origen animal?

@@ -37,7 +37,7 @@
         <a class="nav-link" href="index.php"><ion-icon name="home"></ion-icon><br>Home</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="preguntas.php"><ion-icon name="help"></ion-icon><br>Preguntas Frecuentes</a>
+        <a class="nav-link" href="preguntas.php"><ion-icon name="help"></ion-icon><br>Preguntas <br> Frecuentes</a>
               </li>
               <li class="nav-item active">
         <a class="nav-link" href="registro.php"><ion-icon name="information-circle"></ion-icon><br>Registrate</a>
@@ -46,7 +46,7 @@
         <a class="nav-link" href="login.php"><ion-icon name="log-in"></ion-icon><br>Login</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="carrito.php"><ion-icon name="cart"></ion-icon><br>Hace tu Pedido</a>
+        <a class="nav-link" href="carrito.php"><ion-icon name="cart"></ion-icon><br>Hace <br> tu Pedido</a>
       </li>
     </ul>
   </div>

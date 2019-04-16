@@ -66,7 +66,7 @@ nav{
 }
 .navbar-expand-lg .navbar-nav {
   margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 10px;
 }
 nav h1 {
   padding: 12px 0 0 15px;
@@ -90,7 +90,7 @@ ion-icon{
   color: white;
 }
 nav ul li{
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 /*Estilos del footer*/
@@ -177,32 +177,57 @@ h4 {
       margin-right:  00px;
   }
   nav h1 {
-    padding: 12px 0 0 150px;
+    padding: 12px 0px 0 15px;
   }
 }
-
-
-
-@media (min-width:768px){
-  .navbar-expand-lg .navbar-nav {
-    width: 13%;
-    padding-top: 7%;
-    justify-content: flex-end;
-    text-align: center;
-  }
-  .logo{
-    width: 15vw;
-    margin:0px 10px 10px 20px;
-  }
+@media (min-width:768px) {
+.navbar-expand-lg .navbar-collapse {
+ display: flex!important;
+ flex-basis: auto;
+}
+.navbar-collapse {
+ padding-top: 0!important;
+ padding-right: 15px;
+}
+.navbar-expand-lg .navbar-toggler {
+ display: none;
+}
+.navbar-expand-lg .navbar-nav {
+ flex-direction: row;
+}
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+  padding-top: 0%;
+  justify-content: flex-end;
+  text-align: center;
+}
+.navbar-nav .nav-link {
+    padding-right: 00px;
+    padding-left: 26px;
+    margin-right: 00px;
+    margin-left: 00px;
+}
+nav h1 {
+  padding: 0px 0px 0 100px;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 80px;
+  height: auto;
+}
 }
 @media (min-width:1024px){
-
-    .logo{
-      width: 8vw;
-      margin:-10px 10px 10px 20px;
-    }
+  .logo {
+    position: absolute;
+    top: 6px;
+    left: 32px;
+    width: 87px;
+    height: auto;
+  }
   nav h1{
-margin-left: 10%;
+    margin-left: 5%;
   }
   .navbar-expand-lg .navbar-nav {
     width: 100%;
@@ -212,8 +237,8 @@ margin-left: 10%;
     text-align: center;
   }
   .navbar-collapse {
-      padding-top: -10px;
-      margin-left:0px;
-      margin-right:  00px;
+    padding-top: -10px;
+    margin-left:0px;
+    margin-right:  00px;
   }
 }
