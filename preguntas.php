@@ -1,12 +1,17 @@
 
-<?php
-include("nav.php") ?>
+<?php include("nav.php") ?>
 
 <div class="container-fluid">
   <div class="PreguntasF">
 
+
   <ul><br><br><br>
     <h3>Preguntas Frecuentes</h3><br><br><br>
+
+
+    <h3>Preguntas Frecuentes</h3><br><br>
+    <ul>
+
     <li>¿Contiene ingredientes de origen animal?
     </li>
 <p class="respuesta">En solo 2 (dos) sabores de los 7 que producimos. <br> Incluimos queso en la preparacion, obteniendo asi, nuestras 2 (dos) únicas opciones vegetarianas. <br>Los 5 (cinco) sabores restantes son 100% veganos. </p>

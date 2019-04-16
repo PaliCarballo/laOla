@@ -6,7 +6,7 @@ body.log {
 
 div.log {
   font-family: 'Fjalla One', sans-serif;
-  margin: 5em;
+  padding: 5%;
   justify-content: center;
   background-color: black;
   color: white;
@@ -17,4 +17,18 @@ div.form-log {
   margin: auto;
   display: initial;
 
+}
+
+input {
+	margin-bottom: 25px;
+}
+button:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+@media (min-width: 700px) {
+	div.log {
+		padding: 10%;
+	}
 }
