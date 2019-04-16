@@ -5,7 +5,7 @@ include("nav.php") ?>
 <div class="container-fluid">
   <div class="PreguntasF">
 
-  <ul>
+  <ul><br><br><br>
     <h3>Preguntas Frecuentes</h3><br><br><br>
     <li>¿Contiene ingredientes de origen animal?
     </li>
