@@ -6,7 +6,7 @@
 
 
   <ul><br><br><br>
-    <h3>Preguntas Frecuentes</h3><br><br><br>
+    <h3>Preguntas Frecuentes</h3> <br><br><br>
 
 
     <h3>Preguntas Frecuentes</h3><br><br>

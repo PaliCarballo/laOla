@@ -157,8 +157,6 @@ h4 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.2em;
 }
-
-
 @media (min-width:375px){
   nav ul li a{
 
@@ -182,6 +180,8 @@ h4 {
     padding: 12px 0 0 150px;
   }
 }
+
+
 
 @media (min-width:768px){
   .navbar-expand-lg .navbar-nav {
