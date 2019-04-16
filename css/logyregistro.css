@@ -22,7 +22,7 @@ div.form-log {
 input {
 	margin-bottom: 25px;
 }
-button:hover {
+form button:hover {
 	background-color: #fff;
 	color: #000;
 }
