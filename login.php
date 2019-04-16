@@ -1,5 +1,3 @@
-<body class="log">
-
 <?php include("nav.php");
 
 /*if ($_POST) {
@@ -33,7 +31,7 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
     <form action="index.php" method="get">
   <div class="form-log">
     <label for="email">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail"
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresá tu email"
     name="email">
   </div>
   <div class="form-log">

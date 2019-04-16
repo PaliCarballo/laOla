@@ -74,11 +74,36 @@ section {
 }
 .producto {
   margin-bottom: 15px;
+  position: relative;
 }
 .producto img{
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+}
+
+#productosDestacados .container-productos .producto .producto-hover {
+  background: #64a19d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  display: none;
+}
+#productosDestacados .container-productos .producto .producto-hover:hover {
+  opacity: 1;
+}
+#productosDestacados .container-productos .producto .producto-hover .producto-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 42%;
+  margin-top: -12px;
+  color: white;
 }
 
 /* Seccion Quienes Somos */
@@ -110,13 +135,13 @@ section {
   }
 
 @media (min-width: 480px) {
-  .productos {
+  .container-productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .producto {
-    width: 45%;
+    width: 49%;
   }
   #sobreNosotros p {
     padding: 30px 30px 10px;
@@ -132,9 +157,6 @@ section {
   .producto {
     width: 33%;
   }
-  .producto img {
-    margin-right: 25px;
-  }
   .fondo-banner h1, .fondo-banner h2  {
     font-size: 4em;
   }
@@ -146,4 +168,16 @@ section {
     margin: 10px auto;
     width: 60%;
   }
+  #productosDestacados .container-productos .producto .producto-hover {
+    display: block;
+  }
+}
+
+
+@media (min-width: 900px) {
+  #productosDestacados {
+    max-width: 80%;
+    margin: auto;
+  }
+  
 }
