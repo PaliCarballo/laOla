@@ -1,21 +1,39 @@
 <div class="container-fluid">
     <footer>
-        <h3>Seguinos en nuestras redes sociales</h3><br>
-      <ul>
-              <li>
-                  <a href="https://www.facebook.com/tellevalaola/"> <ion-icon name="logo-facebook"></ion-icon><br></a>
-              </li>
-              <li>
-                  <a href="https://www.instagram.com/tellevalaola/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon><br></a>
-              </li>
-              <li>
-                  <a href="https://www.twitter.com/?lang=es"> <ion-icon name="logo-twitter"></ion-icon><br></a>
-              </li>
-              <li>
-                  <a href="https://web.whatsapp.com/"> <ion-icon name="logo-whatsapp"></ion-icon><br></a>
-              </li>
-      </ul>
-        <h4>Copyright-2019-la Ola S.A</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-lg-4">
+                    <h1><a href="index.php"> <img src="img/logo-footer.svg" class="logo-footer"> <br>LA OLA </a></h1>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <h5>Destacados</h5>
+                    <ul>
+                        <li><a href="carrito.php">H. de Garbanzos</a></li>
+                        <li><a href="carrito.php">Combo lentejas</a></li>
+                        <li><a href="carrito.php">H. de Zapallo</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <h5>INFO</h5>
+                    <ul>
+                        <li><a href="https://web.whatsapp.com/" target="_blank">15 7054-0769</a></li>
+                        <li><a href="mailto:tellevalaola@gmail.com">tellevalaola@gmail.com</a></li>
+                        <li><a href="https://www.google.com.ar/maps/place/Munro,+Buenos+Aires/@-34.5273178,-58.5442658,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcb0c6644d53c1:0x9c0cd6b0d56aa783!8m2!3d-34.5304233!4d-58.5243501" target="_blank">Munro | Bs. As.</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-lg-4">
+                    <div class="iconos-redes">
+                        <a href="https://www.instagram.com/tellevalaola/?hl=es-la" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.facebook.com/tellevalaola/" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"> <ion-icon name="logo-whatsapp"></ion-icon><br></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contacto</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© Copyright 2019. Todos los derechos reservados. La Ola S.A</p>
+        </div>
     </footer>
 </div>
 

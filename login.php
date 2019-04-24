@@ -43,7 +43,5 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
 </form>
 </div>
 
-<?php
-include("footer.php") ?>
-  </body>
-</html>
+<?php include("footer.php") ?>
+

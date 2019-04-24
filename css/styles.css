@@ -79,13 +79,13 @@ nav ul li a{
   font-size: 13px;
   color: white;
   list-style-type: none;
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 nav ul li a :hover{
   background-color: black;
   color:red;
 }
-ion-icon{
+nav ion-icon{
   font-size: 2em;
   color: white;
 }
@@ -93,69 +93,136 @@ nav ul li{
     padding-left: 0px;
 }
 
-/*Estilos del footer*/
-footer{
-  background-color: #000;
-  padding:5%;
-  color: white;
-}
+/* Estilos del footer */
 
+footer {
+    background-color: #111;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+footer .container {
+    margin: 20px auto 30px;
+}
+footer .footer-copyright {
+    background-color: #000;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+}
+footer .footer-copyright p {
+    font-size: 0.8em;
+    margin: 10px;
+    color: #ccc;
+}
 footer ul {
-  display: flex;
-  justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+footer .logo-footer {
+  width: 50px;
+  height: auto;
+  margin: 0 0 10px 19px;
+}
+footer h5 {
+    font-size: 1.3em;
+    color: white;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+footer a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+footer a:hover, footer a:active {
+    text-decoration: none;
+    color: white;
+}
+footer h1 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+footer .iconos-redes {
+    display: inline;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
 }
 
-footer ul li{
-  display: flex;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: white;
+footer .iconos-redes a {
+    font-size: 2.5em;
+    color: #fff;
+    padding: 5px;
+    transition: 0.2s;
 }
 
-footer ul li a{
-
-list-style-type: none;
-  font-size: 100%;
-  color: white;
+footer .iconos-redes a:hover {
+    text-decoration: none;
+    color: #64a19d;
 }
 
-footer a:hover {
-  color: white;
+
+
+footer .btn {
+    color: white;
+    background-color: #64a19d;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
 }
 
-footer h3 {
-  font-size: 1.42em;
-  margin: 0 auto;
-  text-align: center;
-
+@media screen and (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
 }
 
-h4 {
-  font-size: 1em;
-  text-align: center;
-}
+
+
+
 
 /*Aca es el style de Preguntas*/
-.PreguntasF {
-  padding: 6%;
+.fondo-preguntas {
+  background-image: url("../img/fondo-preguntas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  padding: 50px 0 100px;
 }
-.PreguntasF h3{
-  color: black;
-  font-size: 2em;
-  padding-top: 10px;
+.preguntasF {
+  text-align: center;
 }
-.PreguntasF ul {
-  margin-left: 5%;
+.preguntasF h3{
+  color: #000;
+  font-size: 1.9em;
+  padding: 10px 0;
 }
-.PreguntasF ul .respuesta{
-  color: black;
-  font-family: 'Quicksand', sans-serif;
-  margin-left: 5%;
+.preguntasF .card {
+  margin: 0 auto 10px;
+  max-width: 500px;
+  border: none;
 }
-.PreguntasF ul li{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 1.2em;
+.preguntasF .card-header {
+  background-color: #000;
+  
+}
+
+.preguntasF .btn-link {
+  color: #fff;
+}
+.preguntasF .btn-link:hover, .preguntasF .btn-link:active{
+  text-decoration: none;
+}
+.preguntasF .card-body p {
+  color: #000!important;
 }
 @media (min-width:320px){
 
