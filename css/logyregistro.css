@@ -29,3 +29,80 @@ form button:hover {
 		padding: 10%;
 	}
 }
+@media (min-width: 320px) {
+.log {
+    background-color: black;
+    height: 306vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 375px) {
+.log {
+    background-color: black;
+    height: 306vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 425px) {
+.log {
+    background-color: black;
+    height: 306vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 768px) {
+.log {
+    background-color: black;
+    height: 218vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 1024px) {
+.log {
+    background-color: black;
+    height: 227vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 1440px) {
+.log {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 2560px) {
+.log {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}

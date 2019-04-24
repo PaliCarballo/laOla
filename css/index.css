@@ -1,5 +1,5 @@
 .fondo-banner {
-  background-image: url("../img/fondo-banner.jpg");
+  background-image: url("../img/fondo22.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -179,5 +179,5 @@ section {
     max-width: 80%;
     margin: auto;
   }
-  
+
 }

@@ -21,7 +21,7 @@
                         <li><a href="https://www.google.com.ar/maps/place/Munro,+Buenos+Aires/@-34.5273178,-58.5442658,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcb0c6644d53c1:0x9c0cd6b0d56aa783!8m2!3d-34.5304233!4d-58.5243501" target="_blank">Munro | Bs. As.</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3 col-lg-4">
+                <div class="col-sm-2 col-lg-4">
                     <div class="iconos-redes">
                         <a href="https://www.instagram.com/tellevalaola/?hl=es-la" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
                         <a href="https://www.facebook.com/tellevalaola/" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
