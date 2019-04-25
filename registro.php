@@ -22,23 +22,24 @@
 
 
         if ($_POST['nombre'] == "") {
-            $noname = "ingrese nombre";
+            $noname = "el nombre debe tener como minimo dos caracteres";
         }
+
         if ($_POST['email'] == "") {
-            $nomail = "ingrese mail";
+            $nomail = "ingrese mail válido";
         }
         if ($_POST['password'] == "") {
-            $nopass = "ingrese contraseña";
+            $nopass = "la contraseña debe tener 4 caracteres como mínimo";
         }
         if ($_POST['dire'] == "") {
-            $nodire = "ingrese direccion";
+            $nodire = "ingrese dirección válida";
         }
         if ($_POST['ciudad'] == "") {
-            $nociudad = "ingrese Ciudad";
+            $nociudad = "ingrese Ciudad válida";
         }
 
         if ($_POST['codpost'] == "") {
-            $nocodpos = "ingrese código postal";
+            $nocodpos = "ingrese código postal válido";
         }
 
         /* require_once ('cliente.php');
@@ -52,7 +53,7 @@
             $errorDni = $clienteNuevo->getDni( == null ? 'cargar nuevo dni' : '');*/
         }
 
-      
+
 
 
      ?>
@@ -60,29 +61,24 @@
      <div class="log">
 
 
-    <form method="post">
+    <form class="form-reg" method="post">
         <div class="form-group">
           <label for="inputAddress">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Ingresá tu nombre" name="nombre">
-          <?php echo $noname; ?>
+          <input type="text" class="form-control" id="inputAddress" placeholder="<?php echo $noname; ?>" name="nombre">
         </div>
-
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
-          <?php echo $nomail; ?>
-        </div>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="<?php echo $nomail; ?>" name="email">
+          </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Contraseña</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password">
-          <?php echo $nopass; ?>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="<?php echo $nopass; ?>" name="password">
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress">Dirección</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Calle Falsa 123" name="dire">
-        <?php echo $nodire; ?>
+        <input type="text" class="form-control" id="inputAddress" placeholder="<?php echo $nodire; ?>" name="dire">
       </div>
       <div class="form-group">
         <label for="inputAddress2">Dpto., piso, etc.</label>
@@ -91,8 +87,7 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity" name="ciudad">
-          <?php echo $nociudad; ?>
+          <input type="text" class="form-control" id="inputCity" name="ciudad" placeholder="<?php echo $nociudad; ?>">
         </div>
         <div class="form-group col-md-4">
           <label for="inputState">Provincia</label>
@@ -105,8 +100,7 @@
         </div>
         <div class="form-group col-md-2">
           <label for="inputZip">C.P.</label>
-          <input type="text" class="form-control" id="inputZip" name="codpost">
-          <?php echo $nocodpos; ?>
+          <input type="text" class="form-control" id="inputZip" name="codpost" placeholder="<?php echo $nocodpos; ?>">
         </div>
       </div>
       <button type="submit" class="btn btn-outline-light">Enviar :)</button>
@@ -124,6 +118,3 @@
 
 
 <?php include("footer.php") ?>
-
-
-

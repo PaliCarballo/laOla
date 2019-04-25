@@ -24,6 +24,8 @@ form button:hover {
 	color: #000;
 }
 
+
+
 @media (min-width: 700px) {
 	div.log {
 		padding: 10%;
