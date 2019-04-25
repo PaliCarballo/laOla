@@ -5,10 +5,19 @@
   font-family: 'Fjalla One', sans-serif;
   padding: 5%;
   justify-content: center;
-  background-color: black;
+  background-image: url("../img/fondologyregistro.jpg");
   color: white;
-}
 
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    padding: 30px 0;
+}
+form{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 10px 10px;
+}
 div.form-log {
   width: 25em;
   margin: auto;
@@ -30,4 +39,81 @@ form button:hover {
 	div.log {
 		padding: 10%;
 	}
+}
+@media (min-width: 320px) {
+.log {
+    background-color: black;
+    height: 172vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 375px) {
+.log {
+    background-color: black;
+    height: 173vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 425px) {
+.log {
+    background-color: black;
+    height: 174vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 768px) {
+.log {
+    background-color: black;
+    height: 134vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 1024px) {
+.log {
+    background-color: black;
+    height: 115vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 1440px) {
+.log {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+}
+@media (min-width: 2560px) {
+.log {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
 }
