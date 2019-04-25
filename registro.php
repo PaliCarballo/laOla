@@ -76,14 +76,18 @@
           <input type="password" class="form-control" id="inputPassword4" placeholder="<?php echo $nopass; ?>" name="password">
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-row">
+
+      <div class="form-group col-md-8">
         <label for="inputAddress">Dirección</label>
         <input type="text" class="form-control" id="inputAddress" placeholder="<?php echo $nodire; ?>" name="dire">
       </div>
-      <div class="form-group">
+      <div class="form-group col-md-4">
         <label for="inputAddress2">Dpto., piso, etc.</label>
         <input type="text" class="form-control" id="inputAddress2" placeholder="2do. 'A'" name="dire2">
       </div>
+
+    </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">Ciudad</label>
