@@ -64,7 +64,10 @@
     <form class="form-reg" method="post">
         <div class="form-group">
           <label for="inputAddress">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="<?php echo $noname; ?>" name="nombre">
+          <input type="text" class="form-control <?php echo ($noname!='') ?  'is-invalid':''; ?>" id="inputAddress" placeholder="" name="nombre">
+          <div class="invalid-feedback">
+            <?php echo $noname; ?>
+          </div>
         </div>
       <div class="form-row">
         <div class="form-group col-md-6">
