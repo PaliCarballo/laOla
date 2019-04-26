@@ -30,7 +30,7 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
  <div class="log">
     <form action="index.php" method="get">
   <div class="form-log">
-    <label for="email">Email</label>
+      <label for="email">Email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresá tu email"
     name="email">
   </div>
@@ -44,4 +44,3 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
 </div>
 
 <?php include("footer.php") ?>
-
