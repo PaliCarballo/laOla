@@ -24,19 +24,43 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
 }
 */
  ?>
+ <?php
+ $nomail = "";
+ $nopass = "";
+
+ if($_POST){
+
+   $email = $_POST["email"];
+
+   $pass = $_POST["password"];
+
+   $usuario = file_get_contents("datos.json");
+
+   $datosjson = json_decode($usuario,true);
 
 
+   $emailRegistrado= $datosjson["email"];
+   $contrasenaRegistrada=$datosjson["password"];
+   if(password_verify($pass,$contrasenaRegistrada)&&$email=$emailRegistrado){
+
+     header("Location:index.php?".$_POST["email"]);exit;
+
+   }
+ }
+?>
 
  <div class="log">
-    <form action="index.php" method="get">
+    <form action="" method="post">
   <div class="form-log">
       <label for="email">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresá tu email"
+    <input type="email" class="form-control " id="email" aria-describedby="emailHelp" placeholder="Ingresá tu email"
     name="email">
   </div>
   <div class="form-log">
-    <label for="pass">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" name="pass">
+    <label for="password">Contraseña</label>
+    <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
+
+
   </div>
 
   <button type="submit" class="btn btn-outline-light">Enviar :)</button>
