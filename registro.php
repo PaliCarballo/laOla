@@ -60,6 +60,7 @@
         }
 
 
+
         /* require_once ('cliente.php');
 
         if ($_POST) {
@@ -70,20 +71,11 @@
 
             $errorDni = $clienteNuevo->getDni( == null ? 'cargar nuevo dni' : '');*/
       }
-
-
-
-
      ?>
 
   <div class="log">
     <h2>Registrate</h2>
-    <form action="" method="POST">
-    <!--    <div class="form-group">
-          <label for="inputAddress">Nombre y Apellido</label>
-          <input type="text" class="form-control <?php //echo ($noname!='') ?  'is-invalid':''; ?>" id="nombre" placeholder="" name="nombre">
-          <div class="invalid-feedback"><?php //echo $noname; ?></div>
-        </div> -->
+    <form action="" method="POST" enctype="mmultipart/form-data">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="nombre">Nombre y Apellido</label>
@@ -108,8 +100,6 @@
             <div class="invalid-feedback"><?php echo $nopass; ?></div>
           </div>
         </div>
-
-
         <button type="submit" class="btn btn-outline-light">Enviar :)</button>
     </form>
 
