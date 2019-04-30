@@ -43,28 +43,25 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
    $contrasenaRegistrada=$datosjson["password"];
    if(password_verify($pass,$contrasenaRegistrada)&&$email=$emailRegistrado){
 
-     header("Location:index.php?".$_POST["email"]);exit;
+     header("Location:index.php");
 
    }
  }
 ?>
 
  <div class="log">
+   <h2>Logueate</h2>
     <form action="" method="post">
-  <div class="form-log">
-      <label for="email">Email</label>
-    <input type="email" class="form-control " id="email" aria-describedby="emailHelp" placeholder="Ingresá tu email"
-    name="email">
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" class="form-control " id="email" aria-describedby="emailHelp" placeholder="Ingresá tu email" name="email">
+      </div>
+      <div class="form-row">
+        <label for="password">Contraseña</label>
+        <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
+      </div>
+      <button type="submit" class="btn btn-outline-light">Enviar :)</button>
+    </form>
   </div>
-  <div class="form-log">
-    <label for="password">Contraseña</label>
-    <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
-
-
-  </div>
-
-  <button type="submit" class="btn btn-outline-light">Enviar :)</button>
-</form>
-</div>
 
 <?php include("footer.php") ?>
