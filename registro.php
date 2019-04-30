@@ -79,6 +79,7 @@
           $errores++;
           $todosLosErrores[] = "la contraseña debe tener 4 caracteres como mínimo.";
         }
+
 //validacion de Direccion
         if ($_POST['dire'] == "") {
             $nodire = "ingrese dirección válida";
@@ -159,7 +160,7 @@
      <div class="log">
 
 
-    <form class="form-reg" method="post">
+    <form class="form-reg" method="post" enctype="mmultipart/form-data">
         <div class="form-group">
           <label for="inputAddress">Nombre y Apellido</label>
           <input type="text" class="form-control <?php echo ($noname!='') ?  'is-invalid':''; ?>" id="nombre" placeholder="" name="nombre">
@@ -176,6 +177,7 @@
             <?php echo $nomail; ?>
           </div>
           </div>
+
         <div class="form-group col-md-6">
           <label for="password">Contraseña</label>
           <input type="password" class="form-control <?php echo ($nopass!='') ?  'is-invalid':''; ?>" id="password" placeholder="" name="password">
@@ -184,6 +186,14 @@
             <?php echo $nopass; ?>
           </div>
         </div>
+        <!--<div class="form-group col-md-6">
+          <label for="password">Contraseña</label>
+          <input type="password" class="form-control <?php echo ($nopass!='') ?  'is-invalid':''; ?>" id="password" placeholder="" name="password">
+          <div class="invalid-feedback">
+
+            <?php echo $nopass; ?>
+          </div>
+        </div>-->
       </div>
       <div class="form-row">
 
