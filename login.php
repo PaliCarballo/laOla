@@ -1,4 +1,7 @@
-<?php include("nav.php");
+<?php
+  session_start();
+  include("nav.php");
+
 
 /*if ($_POST) {
 

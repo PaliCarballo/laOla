@@ -37,6 +37,11 @@
               <li class="nav-item active">
         <a class="nav-link" href="preguntas.php"><ion-icon name="help"></ion-icon><br>Preguntas <br> Frecuentes</a>
               </li>
+
+
+              <?php
+              if (empty($_SESSION['nombre'])) {
+            ?>
               <li class="nav-item active">
         <a class="nav-link" href="registro.php"><ion-icon name="information-circle"></ion-icon><br>Registrate</a>
               </li>
@@ -46,6 +51,13 @@
               <li class="nav-item active">
         <a class="nav-link" href="login.php"><ion-icon name="cart"></ion-icon><br>Hace <br> tu Pedido</a>
       </li>
+
+<?php } else {?>
+
+      <li><h4> <?php echo $_SESSION['nombre']; ?></h4></li>
+      <li><a href="cerrarSession.php">Salir</a></li>
+    <?php } ?>
+
     </ul>
   </div>
 </nav>

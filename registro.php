@@ -1,4 +1,12 @@
-<?php include("nav.php");
+<?php
+      session_start();
+      include("nav.php");
+      require_once 'clases/Usuario.php';
+
+      //si hay alguien logueado que vaya a home
+      if (!empty($_SESSION['nombre'])) {
+        header('location:index.php');
+      }
 
       $errores = 0;
       $todosLosErrores = [];
@@ -8,16 +16,25 @@
       $nopass = "";
 
       if ($_POST){
-        $nombre=$_POST["nombre"];
-        $email=$_POST["email"];
-        $pass=password_hash($_POST["password"],PASSWORD_DEFAULT);
+        $nombre = $_POST["nombre"];
+        $email = $_POST["email"];
+        $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
         $usuario["nombre"]=$nombre;
         $usuario["email"]=$email;
         $usuario["password"]=$pass;
 
+        // instancio el usuario
+        $usuario = new Usuario($_POST['nombre'], $email, $pass);
         $usuarioJson= json_encode($usuario);
-        file_put_contents("datos.json",$usuarioJson,FILE_APPEND/LOCK_EX);
+
+        // guardar en el json
+        file_put_contents('usuarios.json', $usuarioJson);
+        $_SESSION['nombre'] = $usuario->getNombre();
+      //  $_SESSION['avatar'] = $usuario->getAvatar();
+
+        // ir al home del usuario
+        header('location:index.php');
 
 /*validacion nombre*/
         if ($_POST["nombre"] == "")

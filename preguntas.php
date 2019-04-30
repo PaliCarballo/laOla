@@ -1,11 +1,13 @@
-
-<?php include("nav.php") ?>
+<?php
+  session_start();
+  include("nav.php");
+?>
 
 <div class="fondo-preguntas">
 
     <div class="container">
         <div class="preguntasF" id="accordionExample">
-            <h3>Preguntas Frecuentes</h3> 
+            <h3>Preguntas Frecuentes</h3>
 
       <div class="card">
         <div class="card-header" id="headingOne">
@@ -139,5 +141,3 @@
 </div>
 
 <?php include("footer.php") ?>
-
-

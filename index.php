@@ -1,4 +1,7 @@
-<?php include('nav.php'); ?>
+<?php
+  session_start();
+  include("nav.php");
+?>
 
 <div class="fondo-banner">
   <div class="texto-banner">
@@ -70,7 +73,7 @@
 <section id="sobreNosotros">
   <h3>- TE LLEVA LA OLA -</h3>
   <p>Creemos que aportar valor es fundamental para nuestro crecimiento. Queremos acompañarte en mejorar tu alimentación y así puedas sentir vitalidad y energía en cada día. Realizamos nuestra labor con dedicación y amor, donde cuidar cada detalle es importante. <br>
-  Por ello ofrecemos un producto artesanal, donde los sabores se conservan tal cual a la materia prima, <strong> 100% natural, sin agregados artificiales ni químicos.</strong> 
+  Por ello ofrecemos un producto artesanal, donde los sabores se conservan tal cual a la materia prima, <strong> 100% natural, sin agregados artificiales ni químicos.</strong>
   La Ola te propone preparar tus comidas de una manera simple y sana.
 <img src="img/icono-logo.png" alt=""></p>
 

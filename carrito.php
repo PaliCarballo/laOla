@@ -1,7 +1,7 @@
-
-    <?php
-      include("nav.php");
-      ?>
+<?php
+  session_start();
+  include("nav.php");
+?>
 
  <div class="productos">
     <div class="cardp">
