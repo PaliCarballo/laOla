@@ -5,7 +5,7 @@
 
       //si hay alguien logueado que vaya a home
       if (!empty($_SESSION['nombre'])) {
-        header('location:index.php');
+        header('location:login.php');
       }
 
       $errores = 0;
@@ -18,7 +18,7 @@
       if ($_POST){
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];
-        $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $pass = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
         $usuario["nombre"]=$nombre;
         $usuario["email"]=$email;
@@ -29,12 +29,12 @@
         $usuarioJson= json_encode($usuario);
 
         // guardar en el json
-        file_put_contents('usuarios.json', $usuarioJson);
-        $_SESSION['nombre'] = $usuario->getNombre();
-      //  $_SESSION['avatar'] = $usuario->getAvatar();
+        file_put_contents('datos.json', $usuarioJson);
+        $_SESSION["nombre"] = $usuario->getNombre();
+      //  $_SESSION["avatar"] = $usuario->getAvatar();
 
         // ir al home del usuario
-        header('location:index.php');
+      //  header('location:index.php');
 
 /*validacion nombre*/
         if ($_POST["nombre"] == "")
