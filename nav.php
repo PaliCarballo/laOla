@@ -41,7 +41,7 @@
 
 
               <?php
-              if (empty($_SESSION['nombre'])) {
+              if (empty($_SESSION['email'])) {
             ?>
               <li class="nav-item active">
         <a class="nav-link" href="registro.php" style="font-size: 18px"><i class="fas fa-seedling" style="font-size: 30px"></i><br>Registrate</a>
@@ -56,9 +56,10 @@
 <?php } else {?>
 
       <li>
-        <a class="nav-link" href="micuenta.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br><?php echo $_SESSION['nombre'];?></a>
+        <a class="nav-link" href="micuenta.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br><?php echo $_SESSION['email'];?><br>Mi Perfil </a>
       </li>
       <li><a href="cerrarSession.php"><i class="fas fa-times-circle" style="font-size: 30px"></i></a></li>
+
     <?php } ?>
 
     </ul>

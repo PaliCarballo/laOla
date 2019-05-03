@@ -5,6 +5,7 @@
 
 <div class="fondo-banner">
   <div class="texto-banner">
+      <h5 class="bienvenido">Bienvenido <?php echo isset($_SESSION['email'])? ($_SESSION['email']):'Invitado'; ?></h5>
       <h1>HAMBURGUESAS</h1>
       <h2>VEGGIES</h2>
       <p>100% Artesanales & Sin Conservantes</p>

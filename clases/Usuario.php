@@ -1,36 +1,31 @@
 <?php
 
 
-    class Usuario {
+    class Usuario implements \JsonSerializable {
 
-      protected $nombre;
       protected $email;
-      private $pass;
+      private $password;
+      private $avatar;
 
-    public function __construct($nombre,$email,$pass){
-      $this->nombre=$nombre;
+    public function __construct($email,$password,$avatar){
       $this->email=$email;
-      $this->pass=$pass;
+      $this->password=$password;
+      $this->avatar=$avatar;
 
-    }
-
-    public function getNombre(){
-      return $this->nombre;
-    }
-    public function setNombre($nombre){
-      $this->nombre = $nombre;
     }
     public function getEmail(){
       return $this->email;
     }
-    public function setEmail($email){
-      $this->email = $email;
+
+    public function getAvatar(){
+      return $this->avatar;
     }
-    public function getPass(){
-      return $this->pass;
-    }
-    public function setPass($pass){
-      $this->pass = $pass;
+
+    public function jsonSerialize()
+    {
+        $vars = get_object_vars($this);
+
+        return $vars;
     }
 
   }

@@ -2,30 +2,6 @@
   session_start();
   include("nav.php");
 
-
-/*if ($_POST) {
-
-$mail= $_POST['email'];
-$password = $_POST['password'];
-$usuarios = file_get_contents('ARCHIVO DONDE GUARDAMOS LOS DATOS');
-$logusuario = json_decode($usuarioss,true);
-
-var_dump($logusuario);
-
-$mailreg = $logusuario["email"];
-$passreg = $logusuario["password"];
-if (password_verify($password, $passreg) && $mail == $passreg) {
-   echo "Bienveido {$logusuario['nombre']}";
-   $_SESSION['mailsreg'] = $mailreg;
-   $_SESSION['nombre'] = $logusuario;
-   header("Location:home.php");
-
-} else {
-  echo "usuario y/o Contraseña incorrecta";
-};
-
-}
-*/
  ?>
  <?php
  $nomail = "";
@@ -46,8 +22,10 @@ if (password_verify($password, $passreg) && $mail == $passreg) {
    $contrasenaRegistrada=$datosjson["password"];
    if(password_verify($pass,$contrasenaRegistrada)&&$email=$emailRegistrado){
 
-     header("Location:index.php");
+     header("Location:index.php?usuario=".$_POST['email']);
 
+   }else{
+     header("Location:login.php");
    }
  }
 ?>
