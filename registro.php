@@ -77,6 +77,14 @@
         }
 
 
+        //aca mando lo de comparar las contraseñas...
+        elseif ($_POST['password']!==$_POST['confPassword'])
+        {
+            $nopass = "las contraseñas no son idénticas";
+            $errores++;
+            $todosLosErrores[]="las contraseñas no son idénticas.";
+        }
+
 
         /* require_once ('cliente.php');
 
