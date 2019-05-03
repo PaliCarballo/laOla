@@ -17,6 +17,7 @@
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/carrito.css">
   </head>
   <body>
@@ -35,7 +36,7 @@
 
     <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-        <a class="nav-link" href="preguntas.php"><ion-icon name="help"></ion-icon><br>Preguntas <br> Frecuentes</a>
+        <a class="nav-link" href="preguntas.php" style="font-size: 18px"><i class="far fa-question-circle" style="font-size: 30px"></i><br>F.A.Q.</a>
               </li>
 
 
@@ -43,19 +44,21 @@
               if (empty($_SESSION['nombre'])) {
             ?>
               <li class="nav-item active">
-        <a class="nav-link" href="registro.php"><ion-icon name="information-circle"></ion-icon><br>Registrate</a>
+        <a class="nav-link" href="registro.php" style="font-size: 18px"><i class="fas fa-seedling" style="font-size: 30px"></i><br>Registrate</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="login.php"><ion-icon name="log-in"></ion-icon><br>Login</a>
+        <a class="nav-link" href="login.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br>Login</a>
               </li>
               <li class="nav-item active">
-        <a class="nav-link" href="login.php"><ion-icon name="cart"></ion-icon><br>Hace <br> tu Pedido</a>
+        <a class="nav-link" href="login.php"><ion-icon name="cart" style="font-size: 47px"></ion-icon></a>
       </li>
 
 <?php } else {?>
 
-      <li><h4> <?php echo $_SESSION['nombre']; ?></h4></li>
-      <li><a href="cerrarSession.php">Salir</a></li>
+      <li>
+        <a class="nav-link" href="micuenta.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br><?php echo $_SESSION['nombre'];?></a>
+      </li>
+      <li><a href="cerrarSession.php"><i class="fas fa-times-circle" style="font-size: 30px"></i></a></li>
     <?php } ?>
 
     </ul>
