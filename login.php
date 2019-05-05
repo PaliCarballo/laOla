@@ -6,6 +6,7 @@
  <?php
  $nomail = "";
  $nopass = "";
+ $recordar ="";
 
 
  if($_POST){
@@ -19,15 +20,29 @@
    $datosjson = json_decode($usuario,true);
 
 
+
    $emailRegistrado= $datosjson["email"];
    $contrasenaRegistrada=$datosjson["password"];
-   if(password_verify($pass,$contrasenaRegistrada)&&$email=$emailRegistrado){
+
+   if(password_verify($pass,$contrasenaRegistrada)&&$email==$emailRegistrado){
 
      header("Location:index.php?usuario=".$_POST['email']);
+     $_SESSION['mail']=$emailRegistrado;
+     $_SESSION['pass']=$contrasenaRegistrada;
+
+
 
    }else{
      header("Location:login.php");
+     echo "contraseña incorrecta";
    }
+
+
+    if (isset($_POST['recordar'])) {
+      setcookie(email,$emailRegistrado);
+      
+    }
+
  }
 
 
@@ -38,7 +53,7 @@
     <form action="" method="post">
       <div class="form-row">
         <label for="email">Email</label>
-        <input type="email" class="form-control " id="email" aria-describedby="emailHelp" placeholder="Ingresá tu email" name="email">
+        <input type="email" class="form-control " id="email" aria-describedby="emailHelp" placeholder= "Ingresá tu email" name="email">
       </div>
       <div class="form-row">
         <label for="password">Contraseña</label>
@@ -52,6 +67,7 @@
 
 </div>
       <button type="submit" class="btn btn-outline-light">Enviar :)</button>
+
     </form>
   </div>
 

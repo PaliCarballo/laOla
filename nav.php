@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -41,7 +42,7 @@
 
 
               <?php
-              if (empty($_SESSION['email'])) {
+              if (empty($_SESSION['mail'])) {
             ?>
               <li class="nav-item active">
         <a class="nav-link" href="registro.php" style="font-size: 18px"><i class="fas fa-seedling" style="font-size: 30px"></i><br>Registrate</a>
@@ -55,8 +56,12 @@
 
 <?php } else {?>
 
+        <li class="nav-item active">
+      <a class="nav-link" href="carrito.php"><ion-icon name="cart" style="font-size: 47px"></ion-icon></a>
+      </li>
+
       <li>
-        <a class="nav-link" href="micuenta.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br><?php echo $_SESSION['email'];?><br>Mi Perfil </a>
+        <a class="nav-link" href="micuenta.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br><?php echo $_SESSION['mail'];?><br>Mi Perfil </a>
       </li>
       <li><a href="cerrarSession.php"><i class="fas fa-times-circle" style="font-size: 30px"></i></a></li>
 

@@ -1,6 +1,9 @@
 <?php
   session_start();
   include("nav.php");
+  var_dump($_SESSION);
+  echo "<br>";
+  var_dump($_COOKIE);
 ?>
 
 <div class="fondo-banner">

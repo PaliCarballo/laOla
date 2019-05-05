@@ -1,10 +1,11 @@
 <?php
-      session_start();
+      
       include('nav.php');
       require_once('clases/Usuario.php');
 
 
-      if (!empty($_SESSION['nombre']))
+
+      if (!empty($_SESSION['email']))
        {
         header("Location:index.php?usuario=".$_POST['email']);
     }
