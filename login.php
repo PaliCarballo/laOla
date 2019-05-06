@@ -24,10 +24,9 @@
        $email == $emailRegistrado)
     {
       header("Location:index.php?usuario=".$_POST['email']);
-      $_SESSION['mail'] = $emailRegistrado;
+      $_SESSION['email'] = $emailRegistrado;
       $_SESSION['pass'] = $contrasenaRegistrada;
     } else{
-      
       $nopass = 'contraseña o usuario inválidos';
     } if (isset($_POST['recordar'])) {
       setcookie(email,$emailRegistrado);
