@@ -1,5 +1,4 @@
 <?php
-      
       include('nav.php');
       require_once('clases/Usuario.php');
 
@@ -16,6 +15,8 @@
       $nomail = '';
       $nopass = '';
       $errorAvatar='';
+      $nombre = '';
+      $email = '';
 
       if ($_POST)
       {
@@ -117,12 +118,12 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="nombre">Nombre y Apellido</label>
-            <input type="text" class="form-control <?php echo ($noname!='') ?  'is-invalid':''; ?>" id="nombre" placeholder="" name="nombre">
+            <input id="nombre" type="text" class="form-control <?php echo ($noname != "") ? 'is-invalid':""; ?>" name="nombre" value="<?php echo $nombre ?>">
             <div class="invalid-feedback"><?php echo $noname; ?></div>
           </div>
           <div class="form-group col-md-6">
             <label for="email">Email</label>
-            <input type="email" class="form-control <?php echo ($nomail!='') ?  'is-invalid':''; ?>"id="email" placeholder="" name="email">
+            <input id="email" type="email" class="form-control <?php echo ($nomail != '') ? 'is-invalid':''; ?>" name="email" value="<?php echo $email ?>">
             <div class="invalid-feedback"><?php echo $nomail; ?></div>
           </div>
         </div>
