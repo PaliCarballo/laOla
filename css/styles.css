@@ -76,14 +76,20 @@ nav ul {
 }
 nav ul li a{
   font-family: 'Fjalla One', sans-serif;
-  font-size: 13px;
+  font-size: 1em;
   color: white;
   list-style-type: none;
   text-transform: uppercase;
+  margin-top: 5px;
 }
 nav ul li a :hover{
   background-color: black;
-  color:red;
+  color: #64a19d;
+}
+nav i{
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 6px;
 }
 nav ion-icon{
   font-size: 2em;
@@ -92,7 +98,12 @@ nav ion-icon{
 nav ul li{
     padding-left: 0px;
 }
-
+nav ul li a p {
+  display: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #64a19d;
+}
 /* Estilos del footer */
 
 footer {
@@ -307,6 +318,12 @@ nav h1 {
   left: 15px;
   width: 80px;
   height: auto;
+  padding: 5px;
+}
+nav ul li a p {
+  display: inline;
+  text-transform: lowercase;
+  font-size: 0.8em;
 }
 }
 @media (min-width:1024px){
@@ -318,8 +335,8 @@ nav h1 {
     height: auto;
   }
   nav h1{
-    font-size: 4em;
-    margin-left: 5%;
+    font-size: 3.5em;
+    margin-left: 3%;
   }
   .navbar-expand-lg .navbar-nav {
     width: 100%;
@@ -332,6 +349,9 @@ nav h1 {
     padding-top: -10px;
     margin-left:0px;
     margin-right:  00px;
+  }
+  nav ul li a {
+    font-size: 1.5em;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2.5rem;

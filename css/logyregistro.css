@@ -1,4 +1,3 @@
-
 .log {
   background-color: black;
   background-image: url("../img/fondo-form.jpg");
@@ -33,4 +32,19 @@ form button:hover {
 
 form.btn btn-outline-light {
   padding: 10%;
+}
+
+.login {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+.login button {
+  margin-top: 10px;
+}
+.login .form-check {
+  margin-top: 20px;
+}
+.invalid-feedback {
+  margin-top: -17px;
 }

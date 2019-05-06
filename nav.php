@@ -36,34 +36,34 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
     <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-        <a class="nav-link" href="preguntas.php" style="font-size: 18px"><i class="far fa-question-circle" style="font-size: 30px"></i><br>F.A.Q.</a>
-              </li>
-
-
-              <?php
-              if (empty($_SESSION['mail'])) {
-            ?>
-              <li class="nav-item active">
-        <a class="nav-link" href="registro.php" style="font-size: 18px"><i class="fas fa-seedling" style="font-size: 30px"></i><br>Registrate</a>
-              </li>
-              <li class="nav-item active">
-        <a class="nav-link" href="login.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br>Login</a>
-              </li>
-              <li class="nav-item active">
-        <a class="nav-link" href="login.php"><ion-icon name="cart" style="font-size: 47px"></ion-icon></a>
+      <li class="nav-item active">
+        <a class="nav-link" href="preguntas.php"><i class="far fa-question-circle"></i><br>F.A.Q.</a>
       </li>
 
-<?php } else {?>
+      <?php if (empty($_SESSION['mail'])) 
+      { ?>
 
-        <li class="nav-item active">
-      <a class="nav-link" href="carrito.php"><ion-icon name="cart" style="font-size: 47px"></ion-icon></a>
+      <li class="nav-item active">
+        <a class="nav-link" href="registro.php"><i class="fas fa-seedling" ></i><br>Registrate</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="login.php"><i class="fas fa-user-circle" ></i><br>Login</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="login.php"><ion-icon name="cart"></ion-icon></a>
       </li>
 
+      <?php 
+      } else 
+      { ?>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="carrito.php"><ion-icon name="cart"></ion-icon></a>
+      </li>
       <li>
-        <a class="nav-link" href="micuenta.php" style="font-size: 18px"><i class="fas fa-user-circle" style="font-size: 30px"></i><br><?php echo $_SESSION['mail'];?><br>Mi Perfil </a>
+        <a class="nav-link" href="micuenta.php"><i class="fas fa-user-circle"></i><br><p><?php echo $_SESSION['mail'];?></p><br>Mi Perfil </a>
       </li>
-      <li><a href="cerrarSession.php"><i class="fas fa-times-circle" style="font-size: 30px"></i></a></li>
+      <li><a href="cerrarSession.php"><i class="fas fa-times-circle"></i></a></li>
 
     <?php } ?>
 

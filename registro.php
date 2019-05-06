@@ -138,9 +138,10 @@
             <input type="password" class="form-control <?php echo ($nopass!='') ?  'is-invalid':''; ?>" id="confPassword" placeholder="" name="confPassword">
             <div class="invalid-feedback"><?php echo $nopass; ?></div>
           </div>
-          <label for="avatar">Avatar</label>
-          <input id="avatar" type="file" name="avatar" value=""><?= $errorAvatar?>
-
+          <div class="col-md-6">
+            <label for="avatar">Foto de perfil</label> 
+            <input id="avatar" type="file" name="avatar" value=""><?= $errorAvatar?>
+          </div>
           <button type="submit" class="btn btn-outline-light">Enviar :)</button>
         </div>
     </form>
