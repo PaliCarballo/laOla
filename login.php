@@ -20,7 +20,7 @@
      $emailRegistrado = $datosjson["email"];
      $contrasenaRegistrada = $datosjson["password"];
 
-    if (password_verify($pass,$contrasenaRegistrada) && 
+    if (password_verify($pass,$contrasenaRegistrada) &&
        $email == $emailRegistrado)
     {
       header("Location:index.php?usuario=".$_POST['email']);
@@ -28,10 +28,12 @@
       $_SESSION['pass'] = $contrasenaRegistrada;
     } else{
       $nopass = 'contraseña o usuario inválidos';
-    } if (isset($_POST['recordar'])) {
-      setcookie(email,$emailRegistrado);
     }
 
+  }
+
+  if (isset($_POST['recordar'])) {
+    setcookie(email,$_POST['email'], time() + 60*60*24);
   }
 
 ?>
@@ -41,7 +43,9 @@
     <form class="login" action="" method="post">
       <div class="form-row">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder= "Ingresá tu email" name="email" value="">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder= "Ingresá tu email" name="email" <?php if (isset($_COOKIE['email'])) {
+           echo "value='{$_COOKIE['email']}'";
+        } ?>>
       </div>
       <div class="form-row">
         <label for="password">Contraseña</label>

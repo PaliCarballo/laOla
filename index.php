@@ -2,6 +2,7 @@
   session_start();
   include("nav.php");
   
+
 ?>
 
 <div class="fondo-banner">
