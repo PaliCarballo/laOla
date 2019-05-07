@@ -40,7 +40,7 @@
         <a class="nav-link" href="preguntas.php"><i class="far fa-question-circle"></i><br>F.A.Q.</a>
       </li>
 
-      <?php if (empty($_SESSION['email'])) 
+      <?php if (empty($_SESSION['email']))
       { ?>
 
       <li class="nav-item active">
@@ -53,17 +53,17 @@
         <a class="nav-link" href="login.php"><ion-icon name="cart"></ion-icon></a>
       </li>
 
-      <?php 
-      } else 
+      <?php
+      } else
       { ?>
 
       <li class="nav-item active">
         <a class="nav-link" href="carrito.php"><ion-icon name="cart"></ion-icon></a>
       </li>
       <li>
-        <a class="nav-link" href="micuenta.php"><i class="fas fa-user-circle"></i><br><p><?php echo $_SESSION['email'];?></p><br>Mi Perfil</a> 
+        <a class="nav-link" href="micuenta.php"><i class="fas fa-user-circle"></i><br><p><?php echo $_SESSION['email'];?></p>
       </li>
-      <li><a class="nav-link" href="cerrarSession.php"><i class="fas fa-times-circle"></i></a></li>
+      <li>Salir<a class="nav-link" href="cerrarSession.php"><i class="fas fa-times-circle"></i></a></li>
 
     <?php } ?>
 

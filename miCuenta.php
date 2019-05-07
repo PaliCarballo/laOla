@@ -3,7 +3,7 @@
       include("nav.php");
 ?>
 
-<div class="card" style="width: 25%;" align="center">
+<div class="card" style="width: 50%;" align="center">
   <img class="avatar" src="<?php echo $_SESSION['avatar']; ?>" alt="">
   <div class="card-body">
     <h5 class="card-title"><?php echo $_SESSION['email'];?></h5>
