@@ -21,7 +21,7 @@
 </div>
 
 
-
+<a class="btn btn-secondary btn-lg" href="editarRegistro.php" role="button">Editar info!</a>
 
 
 
