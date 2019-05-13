@@ -55,7 +55,8 @@
      </div>
    </div>
 
-   <button type="submit" class="btn btn-dark">Guardar cambios</button>
+   <button type="submit" class="btn b2tn-dark">Guardar cambios</button>
+   <a class="btn btn-secondary" href="miCuenta.php" role="button">cancelar</a>
  </form>
 
 
