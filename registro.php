@@ -1,4 +1,5 @@
 <?php
+      require('conexion.php');
       include('nav.php');
       require_once('clases/Usuario.php');
 
@@ -17,13 +18,13 @@
       $errorAvatar='';
       $nombre = '';
       $email = '';
+      $yaregistrado='';
+
 
       if ($_POST)
       {
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];
-        $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
-
         //validacion de Nombre
 
         if ($_POST['nombre'] == '')
@@ -51,6 +52,20 @@
           $nomail = 'ingrese formato válido de email';
           $errores++;
           $todosLosErrores[] = 'ingrese formato válido de email.';
+        }else{
+
+          $validator = $conex->prepare("SELECT * FROM usuarios  WHERE email =:email");
+          $validator->bindValue(':email', $email);
+          $validator->execute();
+          $cantidad = $validator->rowCount();
+          $usuarioBD = $validator->fetch(PDO::FETCH_ASSOC);
+
+          if ($cantidad == 1) {
+            $nomail = 'Mail ya registrado';
+            $errores++;
+            $todosLosErrores[] = 'Mail ya registrado';
+          }
+
         }
 /*validacion pass*/
 
@@ -74,42 +89,46 @@
         }
 
 
+
         if(count($todosLosErrores) == 0){
 
-        $avatar='';
+              $avatar='';
+              //var_dump($_FILES); exit;
+              if($_FILES['avatar']['error']===UPLOAD_ERR_OK)
+              {
+                $tipoImagen = $_FILES['avatar']['type'];
+              if( $tipoImagen == 'image/png' || $tipoImagen == 'image/jpg' || $tipoImagen == 'image/jpeg' || $tipoImagen == 'image/gif'){
+                $ext = pathinfo($_FILES['avatar']['name'],  PATHINFO_EXTENSION);
+                $avatar = 'avatars/' . $_POST['email'] . '.' . $ext;
+                      move_uploaded_file($_FILES['avatar']['tmp_name'], $avatar);
+                  }
+                  else
+                  {
+                    $errorAvatar = 'Seleccione una imagen con formato valido';
+                    $errores++;
+                    $todosLosErrores[] ='Seleccione una imagen con formato valido';
+                  }
+              }
+              if(count($todosLosErrores) == 0)
+              {
+                  //  $usuario = new Usuario($_POST['email'], $pass, $avatar);
+                $query=$conex->prepare('INSERT INTO usuarios (nombre,email,password,avatar)
+                VALUES (:nombre,:email,:password,:avatar)');
+                $query->bindValue(':nombre',$_POST['nombre']);
+                $query->bindValue(':email',$_POST['email']);
+                $query->bindValue(':password', password_hash($_POST['password'], PASSWORD_DEFAULT));
+                $query->bindValue(':avatar',$avatar);
+                $query->execute();
+              }
+              header('location:login.php');
 
-        if($_FILES['avatar']['error']===UPLOAD_ERR_OK)
-        {
-          $tipoImagen = $_FILES['avatar']['type'];
-        if( $tipoImagen == 'image/png' || $tipoImagen == 'image/jpg' || $tipoImagen == 'image/jpeg' || $tipoImagen == 'image/gif'){
-          $ext = pathinfo($_FILES['avatar']['name'],  PATHINFO_EXTENSION);
-          $avatar = 'avatars/' . $_POST['email'] . '.' . $ext;
-                move_uploaded_file($_FILES['avatar']['tmp_name'], $avatar);
             }
-            else
-            {
-          $errorAvatar = 'Seleccione una imagen con formato valido';
-          $todosLosErrores != 0;
-            }
-            }
-            if(count($todosLosErrores) == 0)
-            {
-          $usuario = new Usuario($_POST['email'], $pass, $avatar);
-          $usuarioJson= json_encode($usuario);
 
-
-        file_put_contents('datos.json', $usuarioJson);
-          $_SESSION['email'] = $usuario->getEmail();
-          $_SESSION['avatar'] = $usuario->getAvatar();
-
-
-        header('location:login.php');exit;
-            }
 
             }
 
 
-      }
+
      ?>
 
   <div class="log">
@@ -124,7 +143,8 @@
           <div class="form-group col-md-6">
             <label for="email">Email</label>
             <input id="email" type="email" class="form-control <?php echo ($nomail != '') ? 'is-invalid':''; ?>" name="email" value="<?php echo $email ?>">
-            <div class="invalid-feedback"><?php echo $nomail; ?></div>
+            <div class="invalid-feedback"><?php echo $nomail; ?>
+          <?php echo $yaregistrado; ?>  </div>
           </div>
         </div>
         <div class="form-row">
@@ -139,7 +159,7 @@
             <div class="invalid-feedback"><?php echo $nopass; ?></div>
           </div>
           <div class="col-md-6">
-            <label for="avatar">Foto de perfil</label> 
+            <label for="avatar">Foto de perfil</label>
             <input id="avatar" type="file" name="avatar" value=""><?= $errorAvatar?>
           </div>
           <button type="submit" class="btn btn-outline-light">Enviar :)</button>

@@ -1,42 +1,63 @@
 <?php
   session_start();
+  require('conexion.php');
   include("nav.php");
   require_once('clases/Usuario.php');
 
+
+
+
+  $nomail = "";
+  $nopass = "";
+  $recordar ="";
+  $email = "";
+
+  if($_POST){
+
+
+
+//pappapap
+
+      $email = $_POST['email'];
+      $validator = $conex->prepare("SELECT * FROM usuarios  WHERE email ='{$email}'");
+      $validator->execute();
+      $cantidad = $validator->rowCount();
+
+      //echo var_dump($cantidad);exit;
+
+      if($cantidad==0){
+
+
+            $nomail = 'contraseña o usuario inválidos';
+      } else {
+
+
+            $usuarioBD = $validator->fetch(PDO::FETCH_ASSOC);
+
+          if(password_verify($_POST['password'],$usuarioBD['password'])){
+
+
+              header("Location:index.php?usuario=".$_POST['email']);
+
+              $_SESSION['email'] = $_POST['email'];
+              $_SESSION['password'] = $usuarioBD['password'];
+          }
+          else{
+              $nopass = 'contraseña o usuario inválidos';
+          }if (isset($_POST['recordar'])) {
+            setcookie(email,$email);
+          }
+      }
+
+
+  }
+
+
+
+
+
  ?>
- <?php
- $nomail = "";
- $nopass = "";
- $recordar ="";
- $email = "";
 
-  if($_POST)
-  {
-     $email = $_POST["email"];
-     $pass = $_POST["password"];
-
-     $usuario = file_get_contents("datos.json");
-     $datosjson = json_decode($usuario,true);
-     $emailRegistrado = $datosjson["email"];
-     $contrasenaRegistrada = $datosjson["password"];
-
-    if (password_verify($pass,$contrasenaRegistrada) &&
-       $email == $emailRegistrado)
-    {
-      header("Location:index.php?usuario=".$_POST['email']);
-      $_SESSION['email'] = $emailRegistrado;
-      $_SESSION['pass'] = $contrasenaRegistrada;
-    } else{
-      $nopass = 'contraseña o usuario inválidos';
-    }
-
-  }
-
-  if (isset($_POST['recordar'])) {
-    setcookie(email,$_POST['email'], time() + 60*60*24);
-  }
-
-?>
 
  <div class="log">
    <h2>Logueate</h2>
