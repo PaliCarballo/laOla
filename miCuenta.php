@@ -6,7 +6,7 @@
 <div class="card" style="width: 50%;" align="center">
   <img class="avatar" src="<?php echo $_SESSION['avatar']; ?>" alt="">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $_SESSION['email'];?></h5>
+    <h7 class="card-title"><?php echo $_SESSION['email'];?></h7>
     <p class="card-text">cosas del usuario....</p>
   </div>
   <ul class="list-group list-group-flush">

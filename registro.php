@@ -2,7 +2,7 @@
       require('conexion.php');
       include('nav.php');
       require_once('clases/Usuario.php');
-
+session_start();
 
 
       if (!empty($_SESSION['email']))
@@ -101,6 +101,7 @@
                 $ext = pathinfo($_FILES['avatar']['name'],  PATHINFO_EXTENSION);
                 $avatar = 'avatars/' . $_POST['email'] . '.' . $ext;
                       move_uploaded_file($_FILES['avatar']['tmp_name'], $avatar);
+                      $_SESSION['avatar']=$avatar;
                   }
                   else
                   {

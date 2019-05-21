@@ -1,4 +1,5 @@
 <?php
+require('conexion.php');
   session_start();
   include("nav.php");
 
