@@ -41,6 +41,8 @@
 
               $_SESSION['email'] = $_POST['email'];
               $_SESSION['password'] = $usuarioBD['password'];
+              $_SESSION['id'] = $usuarioBD['id'];
+
           }
           else{
               $nopass = 'contraseña o usuario inválidos';
